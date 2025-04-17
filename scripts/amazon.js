@@ -30,10 +30,10 @@ const products = [
   }
 ];
   
-let productHTML = '';
+let productsHTML = '';
 
 products.forEach((product) =>{
-productsHTML +=`
+productsHTML += `
 <div class="product-container">
 <div class="product-image-container">
   <img class="product-image"
@@ -46,14 +46,14 @@ ${product.name}
 
 <div class="product-rating-container">
   <img class="product-rating-stars"
-    src="images/ratings/rating-${products.rating*10}.png">
+    src="images/ratings/rating-${(product.rating.stars)*10}.png">
   <div class="product-rating-count link-primary">
     ${product.rating.count} 
   </div>
 </div>
 
 <div class="product-price">
-  $${(product.priceCents/100).fixed(2)}
+  $${(product.priceCents/100).toFixed(2)}
 </div>
 
 <div class="product-quantity-container">
@@ -87,8 +87,9 @@ ${product.name}
 }
 
 );
+console.log(productsHTML);
+document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
-document.querySelector('.products-grid').innerHTML = productHTML;
 
 
 
