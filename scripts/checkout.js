@@ -80,8 +80,10 @@ deliveryOptions.forEach((Option) => {
 </div>
 `
 
-})
-function deliveryOptionsHTML(matchingProduct ,cartItem){
+});
+
+
+function deliveryOptionsHTML(matchingProduct, cartItem){
 let html = '';
 
 deliveryOptions.forEach((deliveryOption) => {
@@ -94,7 +96,7 @@ deliveryOptions.forEach((deliveryOption) => {
   ?'FREE'
   : `$${formatCurrency(deliveryOption.priceCents)} -`
 
- const isChecked = deliveryOption.id === cartItem.deliveryOption.id 
+ const isChecked = deliveryOption.id === cartItem.deliveryOptionsId 
  
   html +=
 
