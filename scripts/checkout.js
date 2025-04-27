@@ -7,7 +7,7 @@ import {deliveryOptions} from '../data/deliveryOptions.js';
 
 
 
-
+localStorage.clear();
 
 let cartSummaryHTML ='';
 cart.forEach((cartItem) => {
