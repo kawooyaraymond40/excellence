@@ -45,6 +45,7 @@ ${product.name}
     <option value="10">10</option>
   </select>
 </div>
+${product.extraInfroHTML()}
 
 <div class="product-spacer"></div>
 
