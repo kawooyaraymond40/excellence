@@ -1,0 +1,200 @@
+<!-- car-wash-website/
+│
+├── index.html          // Main HTML file
+├── styles.css          // CSS file for styling
+├── script.js           // JavaScript file for functionality
+├── images/             // Folder for gallery images
+│   ├── car-wash-1.jpg  // Placeholder image
+│   ├── car-wash-2.jpg  // Placeholder image
+│   ├── car-wash-3.jpg  // Placeholder image
+│   └── car-wash-4.jpg  // Placeholder image
+└── icons/              // Folder for social media icons
+    ├── facebook.png    // Facebook icon
+    ├── instagram.png   // Instagram icon
+    └── twitter.png     // Twitter icon
+     -->
+
+
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional car wash services with high-quality cleaning and affordable pricing. Book now!">
+    <meta name="keywords" content="car wash, vehicle cleaning, auto detailing, car care">
+    <meta name="author" content="Your Car Wash Company">
+    <title>Car Wash | خدمة غسيل السيارات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1 id="header-title">Welcome to Our Car Wash</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#services" id="nav-services">Services</a></li>
+            <li><a href="#pricing" id="nav-pricing">Pricing</a></li>
+            <li><a href="#contact" id="nav-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <img src="images/home.png" alt="home-pic">
+            <h2 id="home-subtitle">Your Trusted Car Wash Service</h2>
+            <p id="home-description">We provide high-quality car wash services to keep your vehicle looking its best.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 id="services-title">Our Services</h2>
+            <ul>
+                <li id="service-1">Exterior Washing</li>
+                <li id="service-2">Interior Cleaning</li>
+                <li id="service-3">Waxing and Polishing</li>
+            </ul>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <h2 id="pricing-title">Pricing Packages</h2>
+            <p id="pricing-basic">Small Car: SAR 20</p>
+            <p id="pricing-premium">Premium Wash: SAR 40</p>
+            <p id="pricing-deluxe">Deluxe Wash: SAR 60</p>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking">
+            <h2 id="booking-title">Book an Appointment</h2>
+            <form id="booking-form">
+                <label for="service-type" id="label-service-type">Select Service:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="basic">Basic Wash</option>
+                    <option value="premium">Premium Wash</option>
+                    <option value="deluxe">Deluxe Wash</option>
+                </select>
+
+                <label for="booking-date" id="label-booking-date">Date:</label>
+                <input type="date" id="booking-date" name="booking-date" required>
+
+                <label for="booking-time" id="label-booking-time">Time:</label>
+                <input type="time" id="booking-time" name="booking-time" required>
+
+                <button type="submit" id="book-button">Book Now</button>
+            </form>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2 id="gallery-title">Our Work</h2>
+            <div class="gallery-container">
+                <img src="images/car-wash-1.jpg" alt="Car Wash Example 1">
+                <img src="images/car-wash-2.jpg" alt="Car Wash Example 2">
+                <img src="images/car-wash-3.jpg" alt="Car Wash Example 3">
+                <img src="images/car-wash-4.jpg" alt="Car Wash Example 4">
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2 id="testimonials-title">What Our Customers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Amazing service! My car looks brand new."</p>
+                    <p><strong>- Ahmed Al-Farsi</strong></p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Very professional and friendly staff."</p>
+                    <p><strong>- Sarah Johnson</strong></p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Highly recommend their deluxe package!"</p>
+                    <p><strong>- Mohammed Ali</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 id="contact-title">Contact Us</h2>
+            <form>
+                <label for="name" id="label-name">Name:</label>
+                <input type="text" id="name" name="name" required>Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </section>
+
+       
+        <section id="locations">
+            <h2 id="locations-title">Our Locations</h2>
+            <div id="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.714271405113!2d39.936138!3d21.4797251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2010042b89b43%3A0x351386cd9f19d424!2z2YXYutiz2YTYqSDYs9mK2KfYsdin2Ko!5e0!3m2!1sen!2ssa!4v1752671966309!5m2!1sen!2ssa"  
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="availability">
+            <h2 id="availability-title">Check Availability</h2>
+            <form id="availability-form">
+                <label for="location" id="label-location">Select Location:</label>
+                <select id="location" name="location" required>
+                    <option value="downtown">Downtown</option>
+                    <option value="suburb">Suburb</option>
+                    <option value="airport">Airport</option>
+                </select>
+        
+                <label for="check-date" id="label-check-date">Date:</label>
+                <input type="date" id="check-date" name="check-date" required>
+        
+                <label for="check-time" id="label-check-time">Time:</label>
+                <input type="time" id="check-time" name="check-time" required>
+        
+                <button type="submit" id="check-button">Check Availability</button>
+            </form>
+            <p id="availability-result"></p>
+        </section>
+
+
+      
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">© 2023 Excellence Car Wash. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://wa.me/966545699674/?text= Car Wash please" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://wa.me/966545699674/?text= Car Wash please" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/966545699674/?text= Car Wash please" target="_blank"><img src="images/whatsapp.png" alt="whatsapp"></a>
+        </div>
+
+        
+    </footer>
+
+    <!-- JavaScript for Language Switching -->
+    <script src="script.js"></script>
+</body>
+</html>
